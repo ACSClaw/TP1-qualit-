@@ -16,4 +16,13 @@ class AddTest {
         assertEquals(3, resultat);
     }
 
+    @Test
+    public void testSoustractionNegatif() {
+        Sub sub = new Sub();
+
+        int resultat = sub.sub(5, -2);
+
+        assertEquals(7, resultat);
+    }
+
 }
