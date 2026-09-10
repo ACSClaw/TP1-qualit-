@@ -1,0 +1,28 @@
+package test;
+
+import main.sub;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class AddTest {
+
+    @Test
+    public void testSoustraction() {
+        Sub sub = new Sub();
+
+        int resultat = sub.sub(5, 2);
+
+        assertEquals(3, resultat);
+    }
+
+    @Test
+    public void testSoustractionNegatif() {
+        Sub sub = new Sub();
+
+        int resultat = sub.sub(5, -2);
+
+        assertEquals(7, resultat);
+    }
+
+}
